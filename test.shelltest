@@ -1,0 +1,30 @@
+@require foo
+
+#
+# comment
+# TODO: comment
+$ echo foo
+foo
+
+# multiline
+bash$ echo \
+foo
+bar
+
+# variable
+$ foo $var
+
+# string
+$ foo "string"
+$ foo "$var string"
+$ foo 'string'
+$ foo '$var string'
+
+# regexp
+$ foo
+=~ bar
+
+# assertion
+"hello"
+'world'
+$foo

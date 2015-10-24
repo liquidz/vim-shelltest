@@ -33,7 +33,7 @@ hi def link stCommand Keyword
 """ Comment
 syn keyword stTodo         contained TODO FIXME XXX BUG
 syn cluster stCommentGroup contains=stTodo
-syn match   stComment      '\v^#.+'  contains=@stCommentGroup
+syn match   stComment      '\v^#.*'  contains=@stCommentGroup
 
 hi def link stComment Comment
 hi def link stTodo    Todo
